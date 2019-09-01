@@ -1,15 +1,17 @@
 const object = {
-    tables: 50,
-    Big: false,
-    colors: ['red', 'yellow'],
+    name: 'John',
+    isAdmin: false,
+    age: 28,
+    note: 'Working a driver',
 };
 
 const wrapper = document.getElementById("app");
 const controls = new Controls(wrapper, object);
 
-controls.add('tables');
-controls.add('colors');
-controls.add('Big');
+controls.add('name');
+controls.add('note');
+controls.add('age');
+controls.add('isAdmin');
 
 function Controls(parentElem, object) {
     this.htmlElements = {};
