@@ -93,9 +93,19 @@ function Controls(parentElem, object) {
             } else {
                 that.data[name] = e.target.value;
             }
-            console.log(that.data)
+
+            const preview = document.querySelector(".preview");
+            showPreview(preview, that.data)
         }
     };
+
+    function showPreview(preview, data) {
+        let textContent = '<b>Your data has changed! <br><br></b>';
+        for (let key in data) {
+            textContent += `<i>${key}: ${data[key]} <br></i>`
+        }
+        preview.innerHTML = textContent;
+    }
 
     function wrapElement(element, name, cssCLass, typeElement) {
         const div = document.createElement('div');
