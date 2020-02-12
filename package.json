@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/maksimkunaev/ui-controls/issues"
   },
-  "homepage": "https://github.com/maksimkunaev/ui-controls#readme"
+  "homepage": "https://github.com/maksimkunaev/ui-controls#readme",
+  "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "rules": {}
+    }
 }

@@ -3,16 +3,18 @@
 ## **Usage**
 
 ```
+import Controls from 'ui-controls'
+
 const wrapper = document.getElementById("app");
 
-const object = {
+const info = {
     name: 'John',
     isAdmin: false,
     age: 28,
     note: 'Working a driver',
 }
 
-const controls = new Controls(wrapper, object)
+const controls = new Controls(wrapper, info)
 
 controls.add('name')
 controls.add('age')

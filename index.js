@@ -1,19 +1,7 @@
-const object = {
-    name: 'John',
-    isAdmin: false,
-    age: 28,
-    note: 'Working a driver',
-};
+/* eslint-disable */
+import './main.css'
 
-const wrapper = document.getElementById("app");
-const controls = new Controls(wrapper, object);
-
-controls.add('name');
-controls.add('note');
-controls.add('age');
-controls.add('isAdmin');
-
-function Controls(parentElem, object) {
+export default function Controls(parentElem, object) {
     this.htmlElements = {};
     this.wrapper = createElement({ htmlTag: 'div', attributes: { class: 'wrapper' }});
     this.htmlInfo = {
